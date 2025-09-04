@@ -22,6 +22,10 @@ body{
     width: 400px;
     height: auto;
 }
+.resize_2{
+    width: 100;
+    height: auto;
+}
 .navigation_tab{
     background-color: rgb(93, 225, 93);
     width: 80px;
@@ -37,7 +41,10 @@ body{
 .navigation_links{
     margin-left: 10px;
     background-color: lightgreen;
-    padding: 5px;
+    padding: 10px;
+    border-style: solid;
+    border-width: thin;
+    border-color: darkgreen;
 
 }
 a{
@@ -80,6 +87,7 @@ a:hover {
 .three {
     grid-column: 1;
     grid-row: 2 / 5;
+
 }
 
 .four {
