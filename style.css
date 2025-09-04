@@ -1,0 +1,198 @@
+body{
+    background-color: rgb(178, 248, 178);
+    background-attachment: fixed;
+}
+/*.hz_image_background{
+    background-color: white;
+    background: (0,0);
+    width: 245px;
+    height: 500px;
+    margin-left: -20px;
+    margin-top: -20px;
+}*/
+.hz_image{
+    background-color: lightgreen;
+    width: 2000;
+    height: 150;
+    margin-left:-10px;
+    margin-top: -10px;
+    border-radius: 9px;
+}
+.resize{
+    width: 400px;
+    height: auto;
+}
+.navigation_tab{
+    background-color: rgb(93, 225, 93);
+    width: 80px;
+    height: 450px;
+    margin-left: -10px;
+    margin-top: -450px;
+    text-align: center;
+    line-height: 70px;
+    border-radius: 9px;
+    
+
+}
+.navigation_links{
+    margin-left: 10px;
+    background-color: lightgreen;
+    padding: 5px;
+
+}
+a{
+    color: green;
+    text-decoration: none;
+}
+a:hover {
+    color: rgb(8, 236, 8);
+}
+
+.three_lines_image{
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.wrapper {
+    max-width: 1440px;
+    margin-left: 80px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+    border-radius: 9px;
+}
+
+.wrapper>div {
+    border-radius: 5px;
+    padding: 1em;
+    background-color: lightgreen;
+}
+.one {
+    grid-column: 1 / 1;
+    grid-row: 1;
+}
+
+.two {
+    grid-column: 2 / 4;
+    grid-row: 1 / 3;
+}
+
+.three {
+    grid-column: 1;
+    grid-row: 2 / 5;
+}
+
+.four {
+    grid-column: 3;
+    grid-row: 3;
+}
+
+.five {
+    grid-column: 2;
+    grid-row: 4;
+}
+
+.six {
+    grid-column: 3;
+    grid-row: 4;
+}
+
+
+
+/*
+body {
+  background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
+  font-family: sans-serif;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 40px;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+.established {
+  font-style: italic;
+}
+
+h1, h2, p {
+  text-align: center;
+}
+
+.menu {
+  width: 80%;
+  background-color: burlywood;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  max-width: 500px;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+hr {
+  height: 2px;
+  background-color: brown;
+  border-color: brown;
+}
+
+.bottom-line {
+  margin-top: 25px;
+}
+
+h1, h2 {
+  font-family: Impact, serif;
+}
+
+.item p {
+  display: inline-block;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+
+.flavor, .dessert {
+  text-align: left;
+  width: 75%;
+}
+
+.price {
+  text-align: right;
+  width: 25%;
+}
+
+
+
+footer {
+  font-size: 14px;
+}
+
+.address {
+  margin-bottom: 5px;
+}
+
+a {
+  color: black;
+}
+
+a:visited {
+  color: black;
+}
+
+a:hover {
+  color: brown;
+}
+
+a:active {
+  color: brown;
+}
+*/
