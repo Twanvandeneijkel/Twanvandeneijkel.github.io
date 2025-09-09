@@ -1,0 +1,79 @@
+.box3{
+  background-color: var(--bluecolor);
+  opacity: 0.7;
+  height: 40%;
+  width: 150%;
+  border-radius: 9px;
+  position: relative;
+  left: -200px;
+  top: -50px;
+}
+
+.box4{
+  background-color: var(--bluecolor);
+  opacity: 0.7;
+  height: 200px;
+  width: 180px;
+  border-radius: 9px;
+  position: relative;
+  right: 60px;
+  top: -45px;
+  
+}
+.box5{
+  background-color: var(--bluecolor);
+  opacity: 0.7;
+  height: 80%;
+  width: 200%;
+  border-radius: 9px;
+  position: relative;
+  right: 170px;
+  top: -50px;
+  
+}
+.box7{
+  background-color: var(--bluecolor);
+  left: -200px;
+  top: -215px;
+  opacity: 0.7;
+  height: 145%;
+  width: 150%;
+  border-radius: 9px;
+  position: relative;
+}
+.box8{
+  background-color: var(--bluecolor);
+  left: -65px;
+  top: -105px;
+  opacity: 0.7;
+  height: 130%;
+  width: 160%;
+  border-radius: 9px;
+  position: relative;
+}
+.box9{
+  background-color: var(--bluecolor);
+  left: 100px;
+  top: -105px;
+  opacity: 0.7;
+  height: 130%;
+  width: 169%;
+  border-radius: 9px;
+  position: relative;
+}
+.resize-kenmerken{
+  height: 160px;
+  width: auto;
+  border-radius: 9px;
+}
+.resize-mijngezicht{
+  margin-top: 5px;
+  margin-left: 2.5px;
+  height: 190px;
+  width: auto;
+  border-radius: 9px;
+}
+.footerbox{
+  margin-left: 102px;
+  margin-top: 635px;
+}

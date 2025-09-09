@@ -1,0 +1,67 @@
+.box3{
+  background-color: var(--bluecolor);
+  opacity: 0.7;
+  height: 50%;
+  width: 180%;
+  border-radius: 9px;
+  position: relative;
+  left: -200px;
+  top: -50px;
+}
+
+.box4{
+  background-color: var(--bluecolor);
+  opacity: 0.7;
+  height: 80%;
+  width: 100%;
+  border-radius: 9px;
+  position: relative;
+  right: -20px;
+  top: -45px;
+  
+}
+.box5{
+  background-color: var(--bluecolor);
+  opacity: 0.7;
+  height: 80%;
+  width: 200%;
+  border-radius: 9px;
+  position: relative;
+  right: -13px;
+  top: -50px;
+  
+}
+.box7{
+  background-color: var(--bluecolor);
+  left: -200px;
+  top: -110px;
+  opacity: 0.7;
+  height: 100%;
+  width: 100%;
+  border-radius: 9px;
+  position: relative;
+}
+.resize-box7{
+  width: auto;
+  height: 100px;
+}
+.box8{
+  background-color: var(--bluecolor);
+  left: -200px;
+  top: -105px;
+  opacity: 0.7;
+  height: 100%;
+  width: 206%;
+  border-radius: 9px;
+  position: relative;
+}
+.box9{
+  background-color: var(--bluecolor);
+  left: 100px;
+  top: -105px;
+  opacity: 0.7;
+  height: 100%;
+  width: 169%;
+  border-radius: 9px;
+  position: relative;
+}

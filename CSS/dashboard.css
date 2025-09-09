@@ -1,0 +1,35 @@
+.box3{
+  background-color: var(--bluecolor);
+  opacity: 0.7;
+  height: 250%;
+  width: 330%;
+  border-radius: 9px;
+  position: relative;
+  left: -200px;
+  top: -70px;
+}
+table{
+  border-collapse: collapse;
+  width: 60%;
+  margin-left: 20%
+}
+th {
+  background-color: rgb(119, 119, 232);
+  text-align: center;
+  border: 5px solid var(--bluecolor);
+  padding: 8px;
+  border-radius: 15px;
+}
+ td{
+  border: 5px solid var(--bluecolor);
+  text-align: center;
+  padding: 8px;
+  background-color: rgb(50, 50, 216);
+  border-radius: 15px;
+}
+h1{
+  text-align: center;
+}
+.footerbox{
+  top: 330px;
+}
