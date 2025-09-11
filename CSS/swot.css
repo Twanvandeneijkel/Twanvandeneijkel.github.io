@@ -1,0 +1,25 @@
+.footerbox{
+    top: 180px;
+    left: 50px;
+}
+.box3{
+    width: 1350px;
+    height: 520px;
+    background-color: var(--boxcolor);
+    border-radius: 9px;
+    position: absolute;
+    left: 120px;
+    top: 90px;
+}
+.swot-pic{
+    top: 0px;
+    right: 0px;
+    height: 100%;
+    width: auto;
+    border-radius: 9px;
+    position:absolute;
+}
+.box3 ul{
+    list-style: none;
+    font-size: 17px;
+}

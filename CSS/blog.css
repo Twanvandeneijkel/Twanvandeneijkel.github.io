@@ -1,3 +1,69 @@
+body{
+  overflow-y:hidden;
+}
+.box3{
+  left: 60px;
+  width: 1200px;
+  height: 400px;
+  position: relative;
+  border-radius: 9px;
+  background-color: var(--boxcolor);
+  overflow-x: auto;
+  scrollbar-color: rgb(0, 0, 185) rgb(142, 142, 255) ;
+  overflow-y:hidden;
+  white-space:nowrap;
+
+}
+::-webkit-scrollbar:hover{
+  color:rgb(198, 198, 198)  
+}
+div.box3 a{
+  background-color: rgb(29, 29, 157);
+  border-radius: 9px;
+  width: 300px;
+  height: 360px;
+  display: inline-block;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  margin-top: -10px;
+  margin-right: 20px
+
+}
+.blogbox-studie{
+  margin-left: 20px;
+  position: relative;
+  top: -1px;
+
+}
+.blogbox-swot{
+  position:relative;
+  top: 30px;
+}
+.blogbox-prog-exp{
+  position:relative;
+  top: -64px;
+}
+.blogbox-ict-dageljks{
+  position:relative;
+  top: -53px;
+}
+p{
+  margin-top: 0px;
+}
+.titel{
+  font-size: 25px;
+}
+.blog-pic{
+  height: auto;
+  width: 260px;
+  border-radius: 9px;
+}
+div.box3 a:hover{
+  background-color: #941313;
+
+}
+
 .footerbox{
   margin-top: 630px;
   margin-left: 100px;

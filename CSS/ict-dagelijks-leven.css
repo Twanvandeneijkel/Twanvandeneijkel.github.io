@@ -1,0 +1,36 @@
+.footerbox{
+    top: 180px;
+    left: 50px;
+}
+.box3{
+    width: 1350px;
+    height: 530px;
+    background-color: var(--boxcolor);
+    border-radius: 9px;
+    position: absolute;
+    left: 120px;
+    top: 90px;
+}
+.ict-dagelijks-leven-pic{
+    top: 0px;
+    right: 0px;
+    height: 100%;
+    width: 40%;
+    border-radius: 9px;
+    position:absolute;
+}
+.box3 p{
+    margin-top: 0px;
+}
+.alinea{
+    font-size: 13px;
+}
+.box3 a{
+    color: white;
+}
+.box3 a:hover{
+    color: red;
+}
+.box3 a:visited{
+    color: rgb(137, 124, 255);
+}
