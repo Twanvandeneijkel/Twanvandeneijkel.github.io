@@ -1,10 +1,13 @@
+body{
+  overflow: auto;
+}
 .box3{
   background-color: var(--boxcolor);
   height: 250%;
-  width: 330%;
+  width: 310%;
   border-radius: 9px;
   position: relative;
-  left: -200px;
+  left: -160px;
   top: -70px;
 }
 table{
@@ -31,4 +34,12 @@ h1{
 }
 .footerbox{
   top: 330px;
+  left: 50px;
+}
+.progress{
+  height: 30px;
+  width: 760px;
+  position: absolute;
+  bottom: 30px;
+  left: 300px;
 }

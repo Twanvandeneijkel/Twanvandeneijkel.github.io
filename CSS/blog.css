@@ -8,14 +8,13 @@ body{
   position: relative;
   border-radius: 9px;
   background-color: var(--boxcolor);
-  overflow-x: auto;
-  scrollbar-color: rgb(0, 0, 185) rgb(142, 142, 255) ;
+  overflow-x: scroll;
+  scrollbar-color: rgb(0, 0, 185) rgb(98, 98, 255) ;
   overflow-y:hidden;
   white-space:nowrap;
-
 }
-::-webkit-scrollbar:hover{
-  color:rgb(198, 198, 198)  
+&::-webkit-scrollbar-thumb{
+  border-radius: 50%;
 }
 div.box3 a{
   background-color: rgb(29, 29, 157);

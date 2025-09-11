@@ -54,5 +54,7 @@ a {
   color: white;
 }
 .footerbox{
-  margin-top: 600px;
+  top: 180px;
+  left: 50px;
+  position: absolute;
 }
