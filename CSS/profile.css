@@ -1,70 +1,93 @@
-.box3{
+profiel-box{
   background-color: var(--boxcolor);
-  height: 40%;
-  width: 150%;
+  height: 150px;
+  width: 300px;
   border-radius: 9px;
-  position: relative;
-  left: -200px;
-  top: -50px;
+  position: absolute;
+  top:0;
+  z-index: 50;
+  top: 70px;
+  left: 100px;
 }
 
-.box4{
+mijn-gezicht{
   background-color: var(--boxcolor);
   height: 200px;
   width: 180px;
   border-radius: 9px;
-  position: relative;
-  right: 60px;
-  top: -45px;
+  position: absolute;
+  top: 70px;
+  left: 420px;
+}
+.resize-mijngezicht{
+  margin-top: 5px;
+  margin-left: 2.5px;
+  height: 190px;
+  width: auto;
+  border-radius: 9px;
+}
+paragraaf-info-1{
+  background-color: var(--boxcolor);
+  height: 250px;
+  width: 500px;
+  border-radius: 9px;
+  position: absolute;
+  top: 70px;
+  left: 620px;
   
 }
-.box5{
+aside{
   background-color: var(--boxcolor);
-  height: 80%;
-  width: 200%;
+  height: 200px;
+  width: 360px;
   border-radius: 9px;
-  position: relative;
-  right: 170px;
-  top: -50px;
-  
+  position: absolute;
+  top: 70px;
+  right: 20px;
 }
-.box6{
-  background-color: var(--boxcolor);
-  height: 80%;
-  width: 60%;
-  border-radius: 9px;
-  position: relative;
-  right: -110px;
-  top: -50px;
-}
-.box6 h2{
+aside h2{
   font-size: 20px;
 }
-.box6 ul{
-  margin-top: -10px;
-  margin-left: 10px;
+aside ul{
   list-style: none;
+  margin-left: -35px;
 }
-.box7{
+aside li{
+  margin-top: 18px;
+}
+aside li:hover{
+  background-color: red;
+  height: 20px;
+  width: 350px;
+  font-size: 15px;
+}
+aside a{
+  text-decoration: none;
+  color: yellow;
+}
+
+ik-verhaal{
   background-color: var(--boxcolor);
-  left: -200px;
-  top: -215px;
-  height: 145%;
-  width: 150%;
+  bottom: 30px;
+  left: 100px;
+  height: 370px;
+  width: 500px;
   border-radius: 9px;
-  position: relative;
+  position: absolute;
+  z-index: 1;
 }
-.box8{
+foto-gallerij{
   background-color: var(--boxcolor);
-  left: -65px;
-  top: -105px;
-  height: 130%;
-  width: 160%;
+  bottom: 30px;
+  left: 620px;
+  height: 330px;
+  width: 500px;
   border-radius: 9px;
-  position: relative;
+  position: absolute;
 }
-.box8 img{
+foto-gallerij img{
   vertical-align: top;
+  margin-top:-20px;
   border-radius: 9px;
 }
 .dipuit{
@@ -87,6 +110,7 @@
   height: auto;
 }
 .rot{
+  margin-top: 0px;
   width: 160px;
   height: auto;
 }
@@ -94,28 +118,26 @@
   width: 100px;
   height: auto;
 }
-.box9{
+kenmerken-{
   background-color: var(--boxcolor);
-  left: 100px;
-  top: -105px;
-  height: 130%;
-  width: 169%;
+  bottom: 30px;
+  right: 20px;
+  height: 380px;
+  width: 360px;
   border-radius: 9px;
-  position: relative;
+  position: absolute;
 }
 .resize-kenmerken{
   height: 160px;
   width: auto;
   border-radius: 9px;
+  position:relative;
+  bottom: 10px;
+  left: 5px;
 }
-.resize-mijngezicht{
-  margin-top: 5px;
-  margin-left: 2.5px;
-  height: 190px;
-  width: auto;
-  border-radius: 9px;
-}
-.footerbox{
-  margin-left: 102px;
-  margin-top: 635px;
+
+footer{
+  position:absolute;
+  top: 230px;
+  left: 100px;
 }

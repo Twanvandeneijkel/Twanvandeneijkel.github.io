@@ -8,195 +8,171 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="CSS/dashboard.css">
-    <title>Home</title>
+    <title>Mijn dashboard</title>
 </head>
 
 <body>
     <main>
-        <div class="wrapper">
-            <div class="grid_box1">
-                <div class="topbar"></div>
-                <a href="https://hz.nl">
-                    <img class="resize_hz_image" src="images/HZ.svg" alt="Logo of HZ university of applied sciences">
-                </a>
-            </div>
-            <div class="grid_box2">
-                <div class="touch_line">
-                    <nav>
-                        <ul>
-                            <li>
-                                <img class="three_lines_image" 
-                                    src="images/3_lines_menu.png" 
-                                    alt="3 lines horizontally" 
-                                    width="30px"
-                                    height="20px">
-                            </li>
-                            <li>
-                                <a class="nav-link" 
-                                    href="./index.html">Home
-                                </a>
-                            </li>
-                            <li>
-                                <a class="nav-link" 
-                                    href="./profile.html">Profile
-                                </a>
-                            </li>
-                            <li>
-                                <a class="active" 
-                                    class="nav-link" 
-                                    href="./dashboard.html">Dashboard
-                                </a>
-                            </li>
-                            <li>
-                                <a class="nav-link" 
-                                    href="./faq.html" >FAQ
-                                </a>
-                            </li>
-                            <li>
-                                <a class="nav-link" 
-                                    href="./blog.html">Blog
-                                </a>
-                            </li>
-                        </ul>
-                    </nav> <!-- end of class navigation_tab -->
-                </div><!-- end of class touch line -->
-            </div> <!-- end of div2 -->
-            <div class="grid_box3">
-                <div class="box3">
-                    <h1>Dashboard</h1>
-                    <table>
-                    <tr>
-                        <th>Blok</th>
-                        <th>Cursus</th>
-                        <th>EC</th>
-                        <th>Examen</th>
-                        <th>Cijfer</th>
-                    </tr>
-                    <tr>
-                        <td rowspan="3">1</td>
-                        <td>PCO (CU75001)</td>
-                        <td>2,5</td>
-                        <td>Presentatie</td>
-                        <td>N.V.T</td>
-                    </tr>
-                    <tr>
-                        <td>CBA (CU75002)</td>
-                        <td>5</td>
-                        <td>Schrijftoets</td>
-                        <td>N.V.T</td>
-                    </tr>
-                    <tr>
-                        <td>PBA (CU75003)</td>
-                        <td>5</td>
-                        <td>Programmeertoets</td>
-                        <td>N.V.T</td>
-                    </tr>
-                    <tr>
-                        <td rowspan="2">2</td>
-                        <td rowspan="2">OOP</td>
-                        <td rowspan="2">10</td>
-                        <td>Presentatie</td>
-                        <td>N.V.T</td>
-                    </tr>
-                    <tr>
-                        <td>Schrijftoets</td>
-                        <td>N.V.T</td>
-                    </tr>
-                    <tr>
-                        <td rowspan="4">3</td>
-                        <td rowspan="3">Framework Project 1 (CU75080)</td>
-                        <td rowspan="3">10</td>
-                        <td>Schrijftoets</td>
-                        <td>N.V.T</td>
-                    </tr>
-                    <tr>
-                        <td>Presentatie (groep)</td>
-                        <td>N.V.T</td>
-                    </tr>
-                    <tr>
-                        <td>Portofolio</td>
-                        <td>N.V.T</td>
-                    </tr>
-                    <tr>
-                        <td rowspan="2">Business Understanding Basics (CU75081)</td>
-                        <td rowspan="2">2.5</td>
-                        <td rowspan="2">Opdracht</td>
-                        <td>N.V.T</td>
-                    </tr>
-                    <tr>
-                        <td rowspan="4">4</td>
-                        <td>N.V.T</td>
-                    </tr>
-                    <tr>
-                        <td rowspan="3">Framework Project 2 (CU75011)</td>
-                        <td rowspan="3">10</td>
-                        <td>Presentatie</td>
-                        <td>N.V.T</td>
-                    </tr>
-                    <tr>
-                        <td>Portfolio</td>
-                        <td>N.V.T</td>
-                    </tr>
-                    <tr>
-                        <td>Portfolio</td>
-                        <td>N.V.T</td>
-                    </tr>
-                    <tr>
-                        <td>1-4</td>
-                        <td>PPD-E (CU75068)</td>
-                        <td>12.5</td>
-                        <td>Interview</td>
-                        <td>N.V.T</td>
-                    </tr>
-                </table>
+        <top-bar>
+            <a href="https://hz.nl">
+                <img class="resize_hz_image" 
+                        src="images/HZ.svg" 
+                        alt="Logo of HZ university of applied sciences">
+            </a>
+        </top-bar>
 
-                <progress class="progress" 
-                    value="45" 
-                    max="60">45</progress>
-
+        <touch-line>
+            <nav class="flex-container">
+                <img src="images/3_lines_menu.png"
+                    alt="3 lines horizontally"
+                    width="50"
+                    height="auto">
+                <div>
+                    <a  class="nav-link"
+                        class="active"
+                        href="./index.html">Home
+                    </a>
                 </div>
-            </div>
-            <div class="grid_box4"></div>
-            <div class="grid_box5"></div>
-            <div class="grid_box6"></div>
-            <div class="grid_box7"></div>
-            <div class="grid_box8"></div>
-            <div class="grid_box9"></div>
-            <div class="grid_box10"></div>
+                <div>
+                    <a class="nav-link"
+                        href="./profile.html">Profile
+                    </a>
+                </div>
+                <div>
+                    <a class="nav-link" 
+                        href="./dashboard.html">Dashboard
+                    </a>
+                </div>
+                <div>
+                    <a class="nav-link" 
+                        href="./faq.html">Faq
+                    </a>
+                </div>
+                <div>
+                    <a class="nav-link" 
+                        href="./blog.html">Blog
+                    </a>
+                </div>
+            </nav>
+        </touch-line>
 
+        <dashboard->
+            <h1>Dashboard</h1>
+            <table>
+                <tr>
+                    <th>Blok</th>
+                    <th>Cursus</th>
+                    <th>EC</th>
+                    <th>Examen</th>
+                    <th>Cijfer</th>
+                </tr>
+                <tr>
+                    <td rowspan="3">1</td>
+                    <td>PCO (CU75001)</td>
+                    <td class="onbekend">2,5</td> 
+                    <td>Presentatie</td>
+                    <td class="onbekend">N.V.T</td>
+                </tr>
+                <tr>
+                    <td>CBA (CU75002)</td>
+                    <td class="onbekend">5</td>
+                    <td>Schrijftoets</td>
+                    <td class="onbekend">N.V.T</td>
+                </tr>
+                <tr>
+                    <td>PBA (CU75003)</td>
+                    <td class="onbekend">5</td>
+                    <td>Programmeertoets</td>
+                    <td class="onbekend">N.V.T</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">2</td>
+                    <td rowspan="2">OOP</td>
+                    <td  class="onbekend" rowspan="2">10</td>
+                    <td>Presentatie</td>
+                    <td class="onbekend">N.V.T</td>
+                </tr>
+                <tr>
+                    <td>Schrijftoets</td>
+                    <td class="onbekend">N.V.T</td>
+                </tr>
+                <tr>
+                    <td rowspan="4">3</td>
+                    <td rowspan="3">Framework Project 1 (CU75080)</td>
+                    <td  class="onbekend" rowspan="3">10</td>
+                    <td>Schrijftoets</td>
+                    <td class="onbekend">N.V.T</td>
+                </tr>
+                <tr>
+                    <td>Presentatie (groep)</td>
+                    <td class="onbekend">N.V.T</td>
+                </tr>
+                <tr>
+                    <td>Portofolio</td>
+                    <td class="onbekend">N.V.T</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">Business Understanding Basics (CU75081)</td>
+                    <td  class="onbekend" rowspan="2">2.5</td>
+                    <td rowspan="2">Opdracht</td>
+                    <td class="onbekend">N.V.T</td>
+                </tr>
+                <tr>
+                    <td rowspan="4">4</td>
+                    <td class="onbekend">N.V.T</td>
+                </tr>
+                <tr>
+                    <td rowspan="3">Framework Project 2 (CU75011)</td>
+                    <td  class="onbekend" rowspan="3">10</td>
+                    <td>Presentatie</td>
+                    <td class="onbekend">N.V.T</td>
+                </tr>
+                <tr>
+                    <td>Portfolio</td>
+                    <td class="onbekend">N.V.T</td>
+                </tr>
+                <tr>
+                    <td>Portfolio</td>
+                    <td class="onbekend">N.V.T</td>
+                </tr>
+                <tr>
+                    <td>1-4</td>
+                    <td>PPD-E (CU75068)</td>
+                    <td class="onbekend">12.5</td>
+                    <td>Interview</td>
+                    <td class="onbekend">N.V.T</td>
+                </tr>
+            </table>
+
+            <progress value="60" max="60"></progress>
+        </dashboard->
     </main>
-    <footer>
-        <div class="footerbox">
-                Bereik mij:
-                <a href="https://github.com/Twanvandeneijkel">
-                    <img class="resize-footer" 
-                        src="images/github.png" 
-                        alt="Github icon" 
-                        target="_blank"
-                        rel="noopener noreferrer">
-                </a>
-                <a href="https://www.instagram.com/twanvandeneijkel">
-                    <img class="resize-footer" 
-                        src="images/instagram.jpg" 
-                        alt="Instagram icon" 
-                        target="_blank"
-                        rel="noopener noreferrer">
-                </a>
-                <a href="https://www.snapchat.com/add/twan-vdeijkel">
-                    <img class="resize-footer" 
-                        src="images/snapchat.png" 
-                        alt="Snapchat icon" 
-                        target="_blank"
-                        rel="noopener noreferrer">
-                </a>
-                <a href="https://www.facebook.com/twaneijkel/">
-                    <img class="resize-footer" 
-                        src="images/facebook.png" 
-                        alt="Facebook icon" 
-                        target="_blank"
-                        rel="noopener noreferrer">
-                </a>
-        </div>
-    </footer>
 
+    <footer>
+        Bereik mij:
+        <a href="https://github.com/Twanvandeneijkel" target="_blank">
+            <img class="resize-footer" 
+                src="images/github.png" 
+                alt="Github icon" 
+                rel="noopener noreferrer">
+        </a>
+        <a href="https://www.instagram.com/twanvandeneijkel" target="_blank">
+            <img class="resize-footer" 
+                src="images/instagram.jpg" 
+                alt="Instagram icon"
+                rel="noopener noreferrer">
+        </a>
+        <a href="https://www.snapchat.com/add/twan-vdeijkel" target="_blank">
+            <img class="resize-footer" 
+                src="images/snapchat.png" 
+                alt="Snapchat icon" 
+                rel="noopener noreferrer">
+        </a>
+        <a href="https://www.facebook.com/twaneijkel/" target="_blank">
+            <img class="resize-footer" 
+                src="images/facebook.png" 
+                alt="Facebook icon" 
+                rel="noopener noreferrer">
+        </a>
+    </footer>
 </body>

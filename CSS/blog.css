@@ -1,11 +1,12 @@
 body{
   overflow-y:hidden;
 }
-.box3{
-  left: 60px;
+blog-posts{
+  top: 150px;
+  left: 150px;
   width: 1200px;
   height: 400px;
-  position: relative;
+  position: absolute;
   border-radius: 9px;
   background-color: var(--boxcolor);
   overflow-x: scroll;
@@ -16,7 +17,7 @@ body{
 &::-webkit-scrollbar-thumb{
   border-radius: 50%;
 }
-div.box3 a{
+blog-posts article{
   background-color: rgb(29, 29, 157);
   border-radius: 9px;
   width: 300px;
@@ -58,12 +59,12 @@ p{
   width: 260px;
   border-radius: 9px;
 }
-div.box3 a:hover{
+blog-posts article:hover{
   background-color: #941313;
 
 }
 
-.footerbox{
-  margin-top: 630px;
-  margin-left: 100px;
+footer{
+  left: 145px;
+  bottom: 40px;
 }

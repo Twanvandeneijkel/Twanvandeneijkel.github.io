@@ -1,14 +1,14 @@
 body{
   overflow: auto;
 }
-.box3{
+dashboard-{
   background-color: var(--boxcolor);
-  height: 250%;
-  width: 310%;
+  height: 670px;
+  width: 1300px;
   border-radius: 9px;
-  position: relative;
-  left: -160px;
-  top: -70px;
+  position: absolute;
+  top: 70px;
+  left: 100px;
 }
 table{
   border-collapse: collapse;
@@ -16,7 +16,7 @@ table{
   margin-left: 20%
 }
 th {
-  background-color: rgb(79, 79, 197);
+  background-color: rgb(165, 68, 255);
   text-align: center;
   border: 5px solid var(--boxcolor);
   padding: 8px;
@@ -26,20 +26,58 @@ th {
   border: 5px solid var(--boxcolor);
   text-align: center;
   padding: 8px;
-  background-color: rgb(24, 24, 184);
+  background-color: rgb(0, 0, 255);
   border-radius: 15px;
 }
 h1{
   text-align: center;
 }
-.footerbox{
-  top: 330px;
-  left: 50px;
+progress[value="45"]::-webkit-progress-value,
+progress[value="46"]::-webkit-progress-value,
+progress[value="47"]::-webkit-progress-value,
+progress[value="48"]::-webkit-progress-value,
+progress[value="49"]::-webkit-progress-value,
+progress[value="50"]::-webkit-progress-value,
+progress[value="51"]::-webkit-progress-value,
+progress[value="52"]::-webkit-progress-value,
+progress[value="53"]::-webkit-progress-value,
+progress[value="54"]::-webkit-progress-value,
+progress[value="55"]::-webkit-progress-value,
+progress[value="56"]::-webkit-progress-value,
+progress[value="57"]::-webkit-progress-value,
+progress[value="58"]::-webkit-progress-value,
+progress[value="59"]::-webkit-progress-value,
+progress[value="60"]::-webkit-progress-value{
+    background: green;
 }
-.progress{
-  height: 30px;
-  width: 760px;
-  position: absolute;
-  bottom: 30px;
-  left: 300px;
+
+progress {
+  border-radius: 7px; 
+  width: 80%;
+  height: 22px;
+  margin-top: 20px;
+  left: 100px;
+  position:absolute;
+  box-shadow: 1px 1px 4px rgba( 0, 0, 0, 0.2 );
+}
+progress::-webkit-progress-bar {
+  background-color: rgb(2, 11, 173);
+  border-radius: 7px;
+}
+progress::-webkit-progress-value {
+  background-color: rgb(255, 0, 0);
+  border-radius: 7px;
+}
+.gehaald{
+  background-color: green;
+}
+.nietgehaald{
+  background-color: red;
+}
+.onbekend{
+  background-color: grey;
+}
+footer{
+  left: 100px;
+  bottom: -100px;
 }

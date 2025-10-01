@@ -8,60 +8,55 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="../CSS/style.css">
     <link rel="stylesheet" href="../CSS/swot.css">
-    <title>Persoonlijke SWOT-analyse</title>
+    <title>Mijn persoonlijke SWOT-analyse</title>
 </head>
 
 <body>
     <main>
-        <div class="wrapper">
-            <div class="grid_box1">
-                <div class="topbar"></div>
+            <top-bar>
                 <a href="https://hz.nl">
-                    <img class="resize_hz_image" src="../images/HZ.svg" alt="Logo of HZ university of applied sciences">
+                    <img class="resize_hz_image" 
+                         src="../images/HZ.svg" 
+                         alt="Logo of HZ university of applied sciences">
                 </a>
-            </div>
-            <div class="grid_box2">
-                <div class="touch_line">
-                    <nav>
-                        <ul>
-                            <li>
-                                <img class="three_lines_image" 
-                                src="../images/3_lines_menu.png" 
-                                alt="3 lines horizontally" 
-                                width="30px"
-                                height="20px">
-                            </li>
-                            <li>
-                                <a class="nav-link" 
-                                    href="../index.html">Home
-                                </a>
-                            </li>
-                            <li>
-                                <a class="nav-link" 
-                                    href="../profile.html">Profile
-                                </a>
-                            </li>
-                            <li>
-                                <a class="nav-link" 
-                                    href="../dashboard.html">Dashboard
-                                </a>
-                            </li>
-                            <li>
-                                <a class="nav-link" 
-                                    href="../faq.html" >FAQ
-                                </a>
-                            </li>
-                            <li>
-                                <a class="active" class="nav-link" 
-                                    href="../blog.html">Blog
-                                </a>
-                            </li>
-                        </ul>
-                    </nav> <!-- end of class navigation_tab -->
-                </div><!-- end of class touch line -->
-            </div> <!-- end of div2 -->
-            <div class="grid_box3">
-                <div class="box3">
+            </top-bar>
+
+            <touch-line>
+                <nav class="flex-container">
+                    <img src="../images/3_lines_menu.png"
+                        alt="3 lines horizontally"
+                        width="50"
+                        height="auto">
+                    <div>
+                        <a  class="nav-link"
+                            class="active"
+                            href="../index.html">Home
+                        </a>
+                    </div>
+                    <div>
+                        <a class="nav-link"
+                            href="../profile.html">Profile
+                        </a>
+                    </div>
+                    <div>
+                        <a class="nav-link" 
+                            href="../dashboard.html">Dashboard
+                        </a>
+                    </div>
+                    <div>
+                        <a class="nav-link" 
+                            href="../faq.html">Faq
+                        </a>
+                    </div>
+                    <div>
+                        <a class="nav-link" 
+                            href="../blog.html">Blog
+                        </a>
+                    </div>
+                </nav>
+            </touch-line>
+
+            <swot-box>
                     <h1>Persoonlijke SWOT-analyse</h1>
                     <h2>Sterktes</h2>
                     <ul>
@@ -84,50 +79,44 @@
                         <li>Ik kan niet heel goed samenwerken op bepaalde punten</li>
                         <li>Durf soms niet te zeggen wat ik werkelijk wil</li>
                     </ul>
-                    <img class="swot-pic" src="../images/swot.png">
-                </div>
-            </div>
-            <div class="grid_box4"></div>
-            <div class="grid_box5"></div>
-            <div class="grid_box6"></div>
-            <div class="grid_box7"></div>
-            <div class="grid_box8"></div>
-            <div class="grid_box9"></div>
-            <div class="grid_box10"></div>
-
+                    <img class="swot-pic" 
+                        src="../images/swot.png"
+                        alt="Plaatje van indeling SWOT-analyse">
+            </swot-box>
+            <back-buttom>
+                <a href="../blog.html">Back</a>
+            </back-buttom>
     </main>
     <footer>
-        <div class="footerbox">
-                Bereik mij:
-                <a href="https://github.com/Twanvandeneijkel">
-                    <img class="resize-footer" 
-                        src="../images/github.png" 
-                        alt="Github icon" 
-                        target="_blank"
-                        rel="noopener noreferrer">
-                </a>
-                <a href="https://www.instagram.com/twanvandeneijkel">
-                    <img class="resize-footer" 
-                        src="../images/instagram.jpg" 
-                        alt="Instagram icon" 
-                        target="_blank"
-                        rel="noopener noreferrer">
-                </a>
-                <a href="https://www.snapchat.com/add/twan-vdeijkel">
-                    <img class="resize-footer" 
-                        src="../images/snapchat.png" 
-                        alt="Snapchat icon" 
-                        target="_blank"
-                        rel="noopener noreferrer">
-                </a>
-                <a href="https://www.facebook.com/twaneijkel/">
-                    <img class="resize-footer" 
-                        src="../images/facebook.png" 
-                        alt="Facebook icon" 
-                        target="_blank"
-                        rel="noopener noreferrer">
-                </a>
-        </div>
+            Bereik mij:
+            <a href="https://github.com/Twanvandeneijkel">
+                <img class="resize-footer" 
+                    src="../images/github.png" 
+                    alt="Github icon" 
+                    target="_blank"
+                    rel="noopener noreferrer">
+            </a>
+            <a href="https://www.instagram.com/twanvandeneijkel">
+                <img class="resize-footer" 
+                    src="../images/instagram.jpg" 
+                    alt="Instagram icon" 
+                    target="_blank"
+                    rel="noopener noreferrer">
+            </a>
+            <a href="https://www.snapchat.com/add/twan-vdeijkel">
+                <img class="resize-footer" 
+                    src="../images/snapchat.png" 
+                    alt="Snapchat icon" 
+                    target="_blank"
+                    rel="noopener noreferrer">
+            </a>
+            <a href="https://www.facebook.com/twaneijkel/">
+                <img class="resize-footer" 
+                    src="../images/facebook.png" 
+                    alt="Facebook icon" 
+                    target="_blank"
+                    rel="noopener noreferrer">
+            </a>
     </footer>
 
 </body>

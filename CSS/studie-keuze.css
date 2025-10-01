@@ -1,8 +1,5 @@
-.footerbox{
-    top: 180px;
-    left: 50px;
-}
-.box3{
+
+studie-keus{
     width: 1390px;
     height: 520px;
     background-color: var(--boxcolor);
@@ -10,6 +7,9 @@
     position: absolute;
     left: 120px;
     top: 90px;
+}
+studie-keus p{
+    margin-top: -5px;
 }
 .studie-keuze-pic{
     top: 0px;
@@ -19,6 +19,30 @@
     border-radius: 9px;
     position:absolute;
 }
-.box3 p{
-    margin-top: -5px;
+back-buttom{
+    height: 60px;
+    width: 200px;
+    background-color: var(--boxcolor);
+    bottom: 20px;
+    border-radius: 9px;
+    position: absolute;
+    right: 25px;
+    text-align: center;
+}
+back-buttom a{
+    display:inline-block;
+    margin-top: 10px;
+    margin-bottom:auto;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+}
+body:has(back-buttom a:hover) back-buttom{
+background-color: red;
+}
+footer{
+    bottom: 20px;
+    left: 120px;
 }

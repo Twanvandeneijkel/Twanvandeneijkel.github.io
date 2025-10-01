@@ -1,32 +1,42 @@
-.welkombox{
+welkom-box{
   background-color: var(--boxcolor);
   width: 500px;
-  height: 280px;
+  height: 310px;
   border-radius: 9px;
   position: absolute;
   margin-top: 40px;
   margin-left: 40px;
   top: 70px;
-  left: 95px;
-  z-index: -1;
+  left: 100px;
 }
-.box4{
+
+
+rij-plaatjes{
   background-color: var(--boxcolor);
   width: 830px;
   height: 110px;
-  position:absolute;
+  position: absolute;
   border-radius: 9px;
   right: 40px;
   top: 110px;
 }
-.box4 img {
+rij-plaatjes img {
   margin-top: 15px;
   margin-left: 15px;
   height: 80px;
   width: 80px;
-  
   transition: .5s ease-in-out;
 }
+rij-plaatjes img:hover{
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  transform: scale(1.3);
+  transform: translateX(-400px);
+  z-index: 10;
+}
+
+
 .scale-pic-css{
   position:absolute;
   left: 710px;
@@ -66,59 +76,56 @@
   z-index: 9;
   position: absolute;
 }
-.box4 img:hover{
-  width: 500px;
-  height: 500px;
-  position: absolute;
-  transform: scale(1.3);
-  transform: translateX(-400px);
-  z-index: 10;
-}
-.box7{
+
+programmeer-ervaring{
   background-color: var(--boxcolor);
   width: 500px;
   height: 200px;
-  position: relative;
-  left: -130px;
-  top: -35px;
+  position: absolute;
+  bottom: 70px;
+  left: 100px;
+  margin-left: 40px;
   border-radius: 9px;
   z-index: -1;
 }
 
 
-.footerbox{
-  position:relative;
-  top: -530px;
-  left: 50px;
+footer{
+  left:140px;
+  bottom: 10px;
 }
-.box7 ol{
+programmeer-ervaring ol{
   list-style: none;
   margin-left: -15%;
   margin-top: -15px;
 }
-.box7 ol li{
+programmeer-ervaring ol li{
   text-align: center;
 }
-.box9{
+motivatie-box{
   background-color: var(--boxcolor);
-  width: 360%;
-  height: 370px;
-  position: relative;
-  left: -380px;
-  top: -205px;
+  width: 830px;
+  height: 400px;
+  position: absolute;
+  bottom: 70px;
+  right: 40px;
   border-radius: 9px;
   z-index: -1;
 }
-.box9 ol{
+motivatie-box ol{
   margin-top: -20px;
   list-style:none;
 }
-.box9 img{
+motivatie-box img{
   border-radius: 9px;
   height: 140px;
   width: auto;
+  position: relative;
 }
-
+/* body:has(.touch-block:hover) .box9 img{
+  transform: translateX(100%);
+  transition: 1s;
+}
 .touch-block{
   width: 136px;
   height: 140px;
@@ -129,10 +136,6 @@
   left: 10px;
 }
 
-body:has(.touch-block:hover) .box9 img{
-  transform: translateX(100%);
-  transition: 1s;
-}
 .touch-block-2{
   width: 136px;
   height: 140px;
@@ -142,4 +145,4 @@ body:has(.touch-block:hover) .box9 img{
   top: 225.5px;
   left: 146px;
   opacity: 0;
-}
+} */

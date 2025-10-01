@@ -1,8 +1,4 @@
-.footerbox{
-    top: 180px;
-    left: 50px;
-}
-.box3{
+ict-dagelijks{
     width: 1350px;
     height: 530px;
     background-color: var(--boxcolor);
@@ -10,6 +6,21 @@
     position: absolute;
     left: 120px;
     top: 90px;
+}
+ict-dagelijks p{
+    margin-top: 0px;
+}
+ict-dagelijks a{
+    color: white;
+}
+ict-dagelijks a:hover{
+    color: red;
+}
+ict-dagelijks a:visited{
+    color: rgb(137, 124, 255);
+}
+.alinea{
+    font-size: 13px;
 }
 .ict-dagelijks-leven-pic{
     top: 0px;
@@ -19,18 +30,30 @@
     border-radius: 9px;
     position:absolute;
 }
-.box3 p{
-    margin-top: 0px;
+back-buttom{
+    height: 60px;
+    width: 200px;
+    background-color: var(--boxcolor);
+    bottom: 10px;
+    border-radius: 9px;
+    position: absolute;
+    right: 65px;
+    text-align: center;
 }
-.alinea{
-    font-size: 13px;
-}
-.box3 a{
+back-buttom a{
+    display:inline-block;
+    margin-top: 10px;
+    margin-bottom:auto;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
     color: white;
+    font-size: 30px;
 }
-.box3 a:hover{
-    color: red;
+body:has(back-buttom a:hover) back-buttom{
+background-color: red;
 }
-.box3 a:visited{
-    color: rgb(137, 124, 255);
+footer{
+    bottom: 10px;
+    left: 120px;
 }
