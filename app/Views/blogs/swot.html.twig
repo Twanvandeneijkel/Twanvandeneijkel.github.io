@@ -1,0 +1,41 @@
+{% extends "/templates/baseBlog.html.twig" %}
+
+{% block title %}SWOT analysis{% endblock %}
+
+{% block styles %}
+    <link rel="stylesheet" href="/css/swot.css">
+
+{% endblock %}
+
+{% block content %}
+    <swot-box>
+        <h1>Persoonlijke SWOT-analyse</h1>
+        <h2>Sterktes</h2>
+        <ul>
+            <li>Andere mensen helpen</li>
+            <li>Op andere letten zodat ze niet erg benadeeld worden</li>
+        </ul>
+        <h2>Zwaktes</h2>
+        <ul>
+            <li>Ben niet zo erg weerbaar</li>
+            <li>Kan niet goed voor mijzelf opkomen</li>
+        </ul>
+        <h2>Kansen</h2>
+        <ul>
+            <li>Mensen die mij willen helpen als ik me niet goed voel (mentaal)</li>
+            <li>Kans om vrienden te krijgen</li>
+            <li>Sociale vaardigheden aansterken</li>
+        </ul>
+        <h2>Bedreigingen</h2>
+        <ul>
+            <li>Ik kan niet heel goed samenwerken op bepaalde punten</li>
+            <li>Durf soms niet te zeggen wat ik werkelijk wil</li>
+        </ul>
+        <img class="swot-pic"
+             src="/images/swot.png"
+             alt="Plaatje van indeling SWOT-analyse">
+    </swot-box>
+    <back-buttom>
+        <a href="../blog">Back</a>
+    </back-buttom>
+{% endblock %}

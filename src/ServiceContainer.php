@@ -9,16 +9,16 @@ class ServiceContainer
     /** @var array<string, object> */
     private array $instances = [];
 
-  /**
-   * @param string $id
-   * @param object $object
-   * @return void
-   * @throws Exception
-   */
+    /**
+     * @param string $id
+     * @param object $object
+     * @return void
+     * @throws Exception
+     */
     public function set(string $id, object $object): void
     {
         if (!isset($id)) {
-          throw new Exception("The given [$id] already exists!");
+            throw new Exception("The given [$id] already exists!");
         }
         $this->instances[$id] = $object;
     }

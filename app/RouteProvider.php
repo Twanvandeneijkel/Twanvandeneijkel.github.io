@@ -2,8 +2,8 @@
 
 namespace App;
 
+use App\Controllers\BlogController;
 use App\Controllers\HomeController;
-use App\Controllers\TaskController;
 use Exception;
 use Framework\RouteProviderInterface;
 use Framework\Router;
@@ -22,10 +22,16 @@ class RouteProvider implements RouteProviderInterface
 
         $homeController = $serviceContainer->get(HomeController::class);
         $router->addRoute('GET', '/', [$homeController, "index"]);
-        $router->addRoute('GET', '/about', [$homeController, "about"]);
+        $router->addRoute('GET', '/profile', [$homeController, "profile"]);
+        $router->addRoute('GET', '/dashboard', [$homeController, "dashboard"]);
+        $router->addRoute('GET', '/faq', [$homeController, "faq"]);
+        $router->addRoute('GET', '/blog', [$homeController, "blog"]);
 
-        $taskController = $serviceContainer->get(TaskController::class);
-        $router->addRoute('GET', '/task', [$taskController, "index"]);
-        $router->addRoute('GET', '/task/create', [$taskController, "create"]);
+        $blogController = $serviceContainer->get(BlogController::class);
+        $router->addRoute('GET', '/blogs', [$blogController, "index"]);
+        $router->addRoute('GET', '/blogs/ict-dagelijks-leven', [$blogController, "ict"]);
+        $router->addRoute('GET', '/blogs/program-experience', [$blogController, "program"]);
+        $router->addRoute('GET', '/blogs/studie-keuze', [$blogController, "study"]);
+        $router->addRoute('GET', '/blogs/swot', [$blogController, "swot"]);
     }
 }

@@ -1,0 +1,72 @@
+{% extends "templates/base.html.twig" %}
+
+{% block title %}Blog{% endblock %}
+
+{% block styles %}
+    <link rel="stylesheet" href="/css/blog.css">
+
+{% endblock %}
+
+{% block content %}
+
+    <blog-posts class="content custom-scrollbar">
+        <a href="blogs/studie-keuze">
+            <article class="blogbox-studie">
+                <p class="titel">
+                    Studie-keuze
+                </p>
+                <img class="blog-pic"
+                     src="images/studiekeus.jpg"
+                     alt="Plaatje wegwijzer met studierichtingen">
+                </br>
+                <b>Ik heb voor ICT gekozen omdat ik</b>
+                </br>
+                <b>leuk vind hoe het allemaal werkt</b>
+            </article>
+        </a>
+        <a href="blogs/swot">
+            <article class="blogbox-swot">
+                <p class="titel">
+                    SWOT-analyse
+                </p>
+                <img class="blog-pic"
+                     src="images/swot.png"
+                     alt="Plaatje van indeling SWOT-analyse">
+                </br>
+                <b>Een persoonlijke SWOT-analyse</b>
+                </br>
+                <b>over mijn sterktes, zwaktes,</b>
+                </br>
+                <b>kansen en bedreigingen</b>
+            </article>
+        </a>
+        <a href="blogs/program-experience">
+            <article class="blogbox-prog-exp">
+                <p class="titel">
+                    Programmeer ervaring
+                </p>
+                <img class="blog-pic"
+                     src="images/program.jpg"
+                     alt="Plaatje van code in Javascript">
+                </br>
+                <b>Een beetje verstand van</b>
+                </br>
+                <b>de basis principes</b>
+            </article>
+        </a>
+        <a href="blogs/ict-dagelijks-leven">
+            <article class="blogbox-ict-dageljks">
+                <p class="titel">
+                    ICT in het leven
+                </p>
+                <img class="blog-pic"
+                     src="images/ransomware.webp"
+                     alt="Plaatje van Ransomware">
+                </br>
+                <b>Hacken is tegenwoordig best</b>
+                </br>
+                <b>voorkomend met al die ict systemen</b>
+            </article>
+        </a>
+    </blog-posts>
+{% endblock %}

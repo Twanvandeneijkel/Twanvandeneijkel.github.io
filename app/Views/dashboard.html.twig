@@ -1,0 +1,100 @@
+{% extends "templates/base.html.twig" %}
+
+{% block title %}Dashboard{% endblock %}
+
+{% block styles %}
+    <link rel="stylesheet" href="/css/dashboard.css">
+{% endblock %}
+
+{% block content %}
+    <dashboard->
+        <h1>Dashboard</h1>
+        <table>
+            <tr>
+                <th>Blok</th>
+                <th>Cursus</th>
+                <th>EC</th>
+                <th>Examen</th>
+                <th>Cijfer</th>
+            </tr>
+            <tr>
+                <td rowspan="3">1</td>
+                <td>PCO (CU75001)</td>
+                <td class="onbekend">2,5</td>
+                <td>Presentatie</td>
+                <td class="onbekend">N.V.T</td>
+            </tr>
+            <tr>
+                <td>CBA (CU75002)</td>
+                <td class="onbekend">5</td>
+                <td>Schrijftoets</td>
+                <td class="onbekend">N.V.T</td>
+            </tr>
+            <tr>
+                <td>PBA (CU75003)</td>
+                <td class="onbekend">5</td>
+                <td>Programmeertoets</td>
+                <td class="onbekend">N.V.T</td>
+            </tr>
+            <tr>
+                <td rowspan="2">2</td>
+                <td rowspan="2">OOP</td>
+                <td  class="onbekend" rowspan="2">10</td>
+                <td>Presentatie</td>
+                <td class="onbekend">N.V.T</td>
+            </tr>
+            <tr>
+                <td>Schrijftoets</td>
+                <td class="onbekend">N.V.T</td>
+            </tr>
+            <tr>
+                <td rowspan="4">3</td>
+                <td rowspan="3">Framework Project 1 (CU75080)</td>
+                <td  class="onbekend" rowspan="3">10</td>
+                <td>Schrijftoets</td>
+                <td class="onbekend">N.V.T</td>
+            </tr>
+            <tr>
+                <td>Presentatie (groep)</td>
+                <td class="onbekend">N.V.T</td>
+            </tr>
+            <tr>
+                <td>Portofolio</td>
+                <td class="onbekend">N.V.T</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Business Understanding Basics (CU75081)</td>
+                <td  class="onbekend" rowspan="2">2.5</td>
+                <td rowspan="2">Opdracht</td>
+                <td class="onbekend">N.V.T</td>
+            </tr>
+            <tr>
+                <td rowspan="4">4</td>
+                <td class="onbekend">N.V.T</td>
+            </tr>
+            <tr>
+                <td rowspan="3">Framework Project 2 (CU75011)</td>
+                <td  class="onbekend" rowspan="3">10</td>
+                <td>Presentatie</td>
+                <td class="onbekend">N.V.T</td>
+            </tr>
+            <tr>
+                <td>Portfolio</td>
+                <td class="onbekend">N.V.T</td>
+            </tr>
+            <tr>
+                <td>Portfolio</td>
+                <td class="onbekend">N.V.T</td>
+            </tr>
+            <tr>
+                <td>1-4</td>
+                <td>PPD-E (CU75068)</td>
+                <td class="onbekend">12.5</td>
+                <td>Interview</td>
+                <td class="onbekend">N.V.T</td>
+            </tr>
+        </table>
+
+        <progress value="60" max="60"></progress>
+    </dashboard->
+{% endblock %}

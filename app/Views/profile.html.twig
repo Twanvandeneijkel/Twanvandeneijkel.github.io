@@ -1,0 +1,126 @@
+{% extends "templates/base.html.twig" %}
+
+{% block title %}Profile{% endblock %}
+
+{% block styles %}
+    <link rel="stylesheet" href="/css/profile.css">
+{% endblock %}
+
+{% block content %}
+    <profiel-box>
+        <h1>Mijn profiel</h1>
+        <p>Op deze pagina staat er informatie over mij.</p>
+    </profiel-box>
+
+    <mijn-gezicht>
+        <div class="box4">
+            <img class="resize-mijngezicht"
+                 src="images/mijn_gezicht.jpg"
+                 alt="Foto van gezicht student">
+        </div>
+    </mijn-gezicht>
+
+    <paragraaf-info-1>
+        <h2>Nog meer informatie over mij!</h2>
+        <p>Ik ben geboren in China. Ik was 3.5 jaar toen ik naar Nederland kwam, en ik heb toen 7 jaartjes in Rotterdam gewoond
+            Daarna ben ik naar Zeeland verhuisd.
+        </p>
+        <p>
+            Ik was al heel vroeg bezig met verschillende technische dingen op het gebied van computers.
+            Ik heb op vakhavo, een tijdelijke richting van havo, ook geleerd om met Arduino te werken.
+
+        </p>
+    </paragraaf-info-1>
+
+    <aside>
+        <h2>relevante linkjes</h2>
+        <ul>
+            <li>
+                <a href="https://hz.nl/uploads/documents/1.4-Over-de-HZ/1.4.3.-Regelingen-en-documenten/OERS/2022-2023/CER-HZ-Bachelor-full-time-2022-2023-DEF-June-13.pdf"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    Examen regelingen
+                </a>
+            </li>
+            <li>
+                <a href="https://hz.nl/uploads/documents/1.4-Over-de-HZ/1.4.3.-Regelingen-en-documenten/OERS/2023-2024/Juli/TWE/IR-B-HBO-ICT-full-time-2023-2024-DEF.pdf"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    Uitvoeringsregeling
+                </a>
+            </li>
+            <li>
+                <a href="https://learn.hz.nl"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    HZ learn
+                </a>
+            </li>
+            <li>
+                <a href="https://hz.osiris-student.nl/voortgang"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    Studie vooruitgang
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/HZ-HBO-ICT"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    HZ GitHub
+                </a>
+            </li>
+        </ul>
+    </aside>
+
+    <ik-verhaal>
+        <h2>Wie ben ik?</h2>
+        <p>Hallo, Ik heet Twan en ik ben een persoon die een passie heeft voor programmeren!
+            Ik ben nu 17 jaar, en ik hou van houthakken.
+            Ik ben molenaar, wat betekent dat ik met meelzakken sjouw en klein verpakkingen inpak.
+        </p>
+        <p>Daarnaast kan ik ook goed kubbussen met een rubikscube.
+            Ik kan nu de kubus in 30 seconden oplossen.
+        </p>
+        <p>Ik heb een broer en zus die nu ergens anders wonen,
+            en ik woon op een pluimvee bedrijf van mijn vader.
+        </p>
+        <p>Dat was kort iets over mij.
+        </p>
+    </ik-verhaal>
+
+    <foto-gallerij>
+        <h4>Klein foto gallerij</h4>
+        <img class="dipuit"
+             src="images/diplomauitreiking.jpg"
+             alt="Foto student op diplomauitreiking">
+        <img class="hond"
+             src="images/hond.jpg"
+             alt="Foto van hond op kussen">
+        <img class="molen"
+             src="images/molen.jpg"
+             alt="Foto witte molen met heg">
+        <img class="ski"
+             src="images/skien.jpg"
+             alt="Foto student aan het skien">
+        <img class="paard"
+             src="images/paard.jpg"
+             alt="Foto student op paard">
+        <img class="rot"
+             src="images/rotterdam.jpg"
+             alt="Foto student op boot in Rotterdam">
+    </foto-gallerij>
+
+    <kenmerken->
+        <h3>Een paar kenmerken van mij op een rij!</h3>
+        <ol>
+            <li>Goede teamgenoot als ik motivatie heb ;)</li>
+            <li>Niet erg weerbaar</li>
+            <li>Soms vrolijk soms niet</li>
+            <li>Niet sterk in sociaal zijn zoals elke ICT-er</li>
+        </ol>
+        <img class="resize-kenmerken"
+             src="images/kenmerken.png"
+             alt="Foto kenmerken in html style">
+    </kenmerken->
+{% endblock %}
