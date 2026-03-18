@@ -1,0 +1,76 @@
+{% extends "partials/base.html.twig" %}
+
+{% block title %}Home{% endblock %}
+
+{% block styles %}
+    <link rel="stylesheet" href="/css/index.css">
+{% endblock %}
+
+{% block content %}
+    <section class="welkom-box">
+        <h1>Welkom op mijn website!</h1>
+        <p>Hallo, ik ben Twan. Een ICT student van de HZ.
+            Ik heb de opdracht gekregen om een zo genaamde
+            "showcase-website" te maken om te tonen hoeveel motivatie je hebt.</p>
+        <p>Is dat perse nodig? Ja blijkbaar wel.
+            Dus hierbij mijn homepagina die er niet uit ziet. Veel leesplezier!</p>
+    </section>
+
+    <div class="rij-plaatjes">
+        <a class="pic-ti"   href="http://tibasicdev.wikidot.com/" target="_blank" rel="noopener noreferrer">
+            <img class="scale-pic" src="/images/tibasic.png" alt="TI-basic foto">
+        </a>
+        <a class="pic-ardui" href="https://www.arduino.cc/" target="_blank" rel="noopener noreferrer">
+            <img class="scale-pic" src="/images/arduino.jpg" alt="Arduino foto">
+        </a>
+        <a class="pic-py"   href="https://www.python.org/" target="_blank" rel="noopener noreferrer">
+            <img class="scale-pic" src="/images/python.jpg" alt="Python foto">
+        </a>
+        <a class="pic-vb"   href="https://learn.microsoft.com/en-us/dotnet/visual-basic/" target="_blank" rel="noopener noreferrer">
+            <img class="scale-pic" src="/images/visualbasic.jpg" alt="Visual basic foto">
+        </a>
+        <a class="pic-c"    href="https://www.w3schools.com/cpp/cpp_intro.asp" target="_blank" rel="noopener noreferrer">
+            <img class="scale-pic" src="/images/c++.jpg" alt="c++ foto">
+        </a>
+        <a class="pic-js"   href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noopener noreferrer">
+            <img class="scale-pic" src="/images/javascript.jpg" alt="Javascript foto">
+        </a>
+        <a class="pic-html" href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" rel="noopener noreferrer">
+            <img class="scale-pic" src="/images/html.jpg" alt="html foto">
+        </a>
+        <a class="pic-css"  href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" rel="noopener noreferrer">
+            <img class="scale-pic" src="/images/css.jpg" alt="css foto">
+        </a>
+    </div>
+
+    <section class="programmeer-ervaring">
+        <h2>Programmeer ervaring op een rijtje</h2>
+        <ol>
+            <li>TI-basic (+++)</li>
+            <li>Arduino (++)</li>
+            <li>Python (+)</li>
+            <li>Visual Basic (+)</li>
+            <li>C++ (=)</li>
+            <li>Javascript (-)</li>
+            <li>HTML (--)</li>
+            <li>CSS (---)</li>
+        </ol>
+    </section>
+
+    <section class="motivatie-box">
+        <h2>Mijn motivatie om deze studie af te ronden.</h2>
+        <ol>
+            <li><strong>Waarom</strong> ben je ICT gaan studeren? - Omdat ik ICT leuk vind</li>
+            <li><strong>Waarom</strong> vind je ICT leuk? - Omdat ik hou van de technische dingen die ICT geeft</li>
+            <li><strong>Waarom</strong> hou je van de technische ICT dingen? -
+                Ik vind het leuk om oplossingen te bedenken waardoor het leven efficienter word.
+            </li>
+        </ol>
+        <p><strong>Dus waarom heb je nou werkelijk gekozen om deze studie te gaan doen?</strong></p>
+        <p>Omdat ik het leuk vind om dingen efficienter te maken op het gebied van ICT. Niet PLC's maar websites/software.</p>
+
+        <div class="touch-block">
+            <img src="/images/motivationgif.gif" alt="Pratende penquin met motivatie woord">
+        </div>
+    </section>
+{% endblock %}

@@ -1,0 +1,92 @@
+body {
+  overflow-y: hidden;
+}
+
+.blog-posts {
+  top: 150px;
+  left: 150px;
+  width: 1200px;
+  height: 400px;
+  position: absolute;
+  border-radius: 9px;
+  background-color: var(--boxcolor);
+  overflow-x: scroll;
+  overflow-y: hidden;
+  scrollbar-color: rgb(0, 0, 185) rgb(98, 98, 255);
+  white-space: nowrap;
+}
+
+.blog-posts::-webkit-scrollbar-thumb {
+  border-radius: 50%;
+}
+
+.blog-posts a {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 20px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.blog-posts a:first-child {
+  margin-left: 20px;
+}
+
+.blog-posts a:not(:last-child) {
+  margin-right: 20px;
+}
+
+.blog-posts article {
+  background-color: rgb(29, 29, 157);
+  border-radius: 9px;
+  width: 300px;
+  height: 360px;
+  color: white;
+  text-align: center;
+  white-space: normal;
+}
+
+.blog-posts article:hover {
+  background-color: #941313;
+}
+
+.titel {
+  font-size: 25px;
+  margin-top: 0;
+}
+
+.blog-pic {
+  height: auto;
+  width: 260px;
+  border-radius: 9px;
+}
+
+.new-blog-button {
+  height: 60px;
+  width: 200px;
+  background-color: var(--boxcolor);
+  border-radius: 9px;
+  position: absolute;
+  bottom: 40px;
+  right: 65px;
+  text-align: center;
+}
+
+.new-blog-button a {
+  display: inline-block;
+  margin-top: 10px;
+  height: 100%;
+  width: 100%;
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+}
+
+body:has(.new-blog-button a:hover) .new-blog-button {
+  background-color: red;
+}
+
+footer {
+  left: 145px;
+  bottom: 40px;
+}

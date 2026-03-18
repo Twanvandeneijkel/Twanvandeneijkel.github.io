@@ -1,0 +1,104 @@
+.welkom-box {
+  background-color: var(--boxcolor);
+  width: 500px;
+  height: 310px;
+  border-radius: 9px;
+  position: absolute;
+  margin-top: 40px;
+  margin-left: 40px;
+  top: 70px;
+  left: 100px;
+}
+
+.rij-plaatjes {
+  background-color: var(--boxcolor);
+  width: 830px;
+  height: 110px;
+  position: absolute;
+  border-radius: 9px;
+  right: 40px;
+  top: 110px;
+}
+
+.rij-plaatjes img {
+  margin-top: 15px;
+  margin-left: 15px;
+  height: 80px;
+  width: 80px;
+  transition: .5s ease-in-out;
+}
+
+.rij-plaatjes img:hover {
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  transform: translateX(-400px);
+  z-index: 10;
+}
+
+.rij-plaatjes a {
+  position: absolute;
+}
+
+.pic-ti    { left: 10px;  z-index: 9; }
+.pic-ardui { left: 110px; z-index: 8; }
+.pic-py    { left: 210px; z-index: 7; }
+.pic-vb    { left: 310px; z-index: 6; }
+.pic-c     { left: 410px; z-index: 5; }
+.pic-js    { left: 510px; z-index: 4; }
+.pic-html  { left: 610px; z-index: 3; }
+.pic-css   { left: 710px; z-index: 2; }
+
+.scale-pic {
+  display: block;
+}
+
+.programmeer-ervaring {
+  background-color: var(--boxcolor);
+  width: 500px;
+  height: 200px;
+  position: absolute;
+  bottom: 70px;
+  left: 100px;
+  margin-left: 40px;
+  border-radius: 9px;
+  z-index: -1;
+}
+
+.programmeer-ervaring ol {
+  list-style: none;
+  margin-left: -15%;
+  margin-top: -15px;
+}
+
+.programmeer-ervaring ol li {
+  text-align: center;
+}
+
+.motivatie-box {
+  background-color: var(--boxcolor);
+  width: 830px;
+  height: 400px;
+  position: absolute;
+  bottom: 70px;
+  right: 40px;
+  border-radius: 9px;
+  z-index: -1;
+}
+
+.motivatie-box ol {
+  margin-top: -20px;
+  list-style: none;
+}
+
+.motivatie-box img {
+  border-radius: 9px;
+  height: 140px;
+  width: auto;
+  position: relative;
+}
+
+footer {
+  left: 140px;
+  bottom: 10px;
+}

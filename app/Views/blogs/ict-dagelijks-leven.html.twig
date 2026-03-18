@@ -1,0 +1,53 @@
+{% extends "/partials/base.html.twig" %}
+
+{% block title %}ICT field of work{% endblock %}
+
+{% block styles %}
+    <link rel="stylesheet" href="/css/ict-dagelijks-leven.css">
+{% endblock %}
+
+{% block content %}
+    <article class="blog-content">
+        <h1>GPUGate Malware: nieuwe aanvalsmethode gebruikt hardware voor ontsleuteling</h1>
+
+        <p><strong>Beveiligingsonderzoeksbedrijf Arctic Wolf heeft een geavanceerde cyberaanval ontdekt
+            die gebruikmaakt van een nieuwe techniek die zij 'GPUGate' hebben gedoopt. De
+            aanvallers misbruiken Google Ads en GitHub om de malware, gericht op gebruikers in
+            West-Europa, te verspreiden. Opvallend is dat de malware alleen ontsleuteld wordt op
+            systemen met een speciale grafische kaart (GPU).</strong>
+        </p>
+
+        <p class="alinea">Volgens een nieuwsbericht van Arctic Wolf Threat Research werd de aanvalsroute op 19 augustus 2025 ontdekt.
+            De daders misbruikten de advertentiestructuur van Google en de opslag van GitHub om gebruikers naar een
+            kwaadaardige download te lokken, die werd gehost op een vervalst domein. Door een specifieke link in de
+            advertentie te verbergen, leek de download afkomstig van een officiële bron, waardoor de argwaan van gebruikers
+            werd omzeild.
+        </p>
+
+        <p>De malware, een opgeblazen Microsoft Software Installer (MSI) van 128 MB, is ontworpen om de meeste
+            beveiligingssandboxes te omzeilen. Het unieke kenmerk van de aanval is de 'GPU-gated' ontsleutelingsroutine: een
+            speciaal proces ontsleutelt de payload alleen op machines met een echte GPU. Hierdoor blijft de schadelijke code
+            versleuteld in omgevingen voor beveiligingsanalyse die niet over deze hardware beschikken.
+        </p>
+
+        <p><strong>Gericht op de IT-sector.</strong>
+            De onderzoekers van Arctic Wolf vermoeden dat de aanvallers zich richten op systemen met specifieke
+            hardwareconfiguraties. Dit suggereert een focus op gebruikers die zich bezighouden met softwareontwikkeling,
+            gaming of cryptocurrency-mining. De aanval heeft met name gebruikers in West-Europa binnen de IT-industrie als
+            doelwit. Het vermoedelijke doel van de campagne is om toegang te krijgen tot organisaties voor kwaadaardige doeleinden zoals diefstal van inloggegevens, infostealing en de inzet van ransomware.
+            <a href="https://www.dutchitchannel.nl/research/704157/gpugate-malware-nieuwe-aanvalsmethode-gebruikt-hardware-voor-ontsleuteling"
+               target="_blank"
+               rel="noopener noreferrer">
+                Lees verder hier.
+            </a>
+        </p>
+
+        <img class="blog-content-pic"
+             src="/images/ransomware.webp"
+             alt="Plaatje van Ransomware">
+    </article>
+
+    <div class="back-button">
+        <a href="../blog">Back</a>
+    </div>
+{% endblock %}

@@ -1,0 +1,2 @@
+DROP TABLE IF EXISTS brokers;
+DROP TABLE IF EXISTS agents;

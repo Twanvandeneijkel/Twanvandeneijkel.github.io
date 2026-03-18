@@ -1,0 +1,54 @@
+.blog-content {
+  width: 1350px;
+  height: 520px;
+  background-color: var(--boxcolor);
+  border-radius: 9px;
+  position: absolute;
+  left: 120px;
+  top: 90px;
+}
+
+.blog-content ul {
+  list-style: none;
+  font-size: 17px;
+}
+
+.blog-content-pic {
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: auto;
+  border-radius: 9px;
+  position: absolute;
+}
+
+.back-button {
+  height: 60px;
+  width: 200px;
+  background-color: var(--boxcolor);
+  bottom: 20px;
+  border-radius: 9px;
+  position: absolute;
+  right: 65px;
+  text-align: center;
+}
+
+.back-button a {
+  display: inline-block;
+  margin-top: 10px;
+  margin-bottom: auto;
+  height: 100%;
+  width: 100%;
+  text-decoration: none;
+  color: white;
+  font-size: 30px;
+}
+
+body:has(.back-button a:hover) .back-button {
+  background-color: red;
+}
+
+footer {
+  bottom: 20px;
+  left: 120px;
+}
