@@ -9,59 +9,23 @@
 {% block content %}
     <div class="blog-posts content custom-scrollbar">
 
-        <a href="blogs/studie-keuze">
-            <article class="blogbox">
-                <p class="titel">Studie-keuze</p>
-                <img class="blog-pic"
-                     src="/images/studiekeus.jpg"
-                     alt="Plaatje wegwijzer met studierichtingen">
-                <p>Ik heb voor ICT gekozen omdat ik leuk vind hoe het allemaal werkt</p>
-            </article>
-        </a>
-
-        <a href="blogs/swot">
-            <article class="blogbox">
-                <p class="titel">SWOT-analyse</p>
-                <img class="blog-pic"
-                     src="/images/swot.png"
-                     alt="Plaatje van indeling SWOT-analyse">
-                <p>Een persoonlijke SWOT-analyse over mijn sterktes, zwaktes, kansen en bedreigingen</p>
-            </article>
-        </a>
-
-        <a href="blogs/program-experience">
-            <article class="blogbox">
-                <p class="titel">Programmeer ervaring</p>
-                <img class="blog-pic"
-                     src="/images/program.jpg"
-                     alt="Plaatje van code in Javascript">
-                <p>Een beetje verstand van de basis principes</p>
-            </article>
-        </a>
-
-        <a href="blogs/ict-dagelijks-leven">
-            <article class="blogbox">
-                <p class="titel">ICT in het leven</p>
-                <img class="blog-pic"
-                     src="/images/ransomware.webp"
-                     alt="Plaatje van Ransomware">
-                <p>Hacken is tegenwoordig best voorkomend met al die ict systemen</p>
-            </article>
-        </a>
-
-        <a href="blogs/studie-keuze-part2">
-            <article class="blogbox">
-                <p class="titel">Studie Keuze deel 2</p>
-                <img class="blog-pic"
-                     src="/images/studiekeuspart2.png"
-                     alt="Plaatje van studiekeuze proces">
-                <p>Nu ik in het derde blok zit van ICT jaar 1 heb ik nieuwe ervaringen opgehaald</p>
-            </article>
-        </a>
+        {% for blog in blogs %}
+            <a href="/blogs/{{ blog.id }}">
+                <article class="blogbox">
+                    <p class="titel">{{ blog.title }}</p>
+                    <img class="blog-pic"
+                         src="{{ blog.image }}"
+                         alt="{{ blog.title }}">
+                    <p>{{ blog.summary }}</p>
+                </article>
+            </a>
+        {% else %}
+            <p class="geen-blogs">Geen blogs gezien, maak een nieuwe blog</p>
+        {% endfor %}
 
     </div>
 
     <div class="new-blog-button">
-        <a href="/blog/new">+ Nieuw blog</a>
+        <a href="/blog/create">+ Nieuw blog</a>
     </div>
 {% endblock %}

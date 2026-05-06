@@ -1,0 +1,27 @@
+{% extends "/partials/base.html.twig" %}
+
+{% block title %}Nieuw blog{% endblock %}
+
+{% block styles %}
+    <link rel="stylesheet" href="/css/blog-show.css">
+{% endblock %}
+
+{% block content %}
+    <article class="blog-content">
+        <form id="blog-edit-form" method="POST" action="/blog/create">
+            <input class="blog-edit-title" type="text" name="title" placeholder="Titel">
+            <textarea class="blog-edit-content" name="content" placeholder="Inhoud"></textarea>
+            <input class="blog-edit-image" type="text" name="image" placeholder="Afbeelding pad (bijv. /images/foto.jpg)">
+            <input class="blog-edit-summary" type="text" name="summary" placeholder="Korte samenvatting">
+            <img class="blog-content-pic" src="" alt="">
+        </form>
+    </article>
+
+    <div class="back-button">
+        <a href="/blog">Annuleer</a>
+    </div>
+
+    <div class="save-button">
+        <button form="blog-edit-form" type="submit">Opslaan</button>
+    </div>
+{% endblock %}

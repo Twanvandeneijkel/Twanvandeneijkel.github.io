@@ -1,0 +1,30 @@
+{% extends "/partials/base.html.twig" %}
+
+{% block title %}{{ blog.title }}{% endblock %}
+
+{% block styles %}
+    <link rel="stylesheet" href="/css/blog-show.css">
+{% endblock %}
+
+{% block content %}
+    <article class="blog-content">
+        <h1>{{ blog.title }}</h1>
+        {{ blog.content|raw }}
+        <img class="blog-content-pic"
+             src="{{ blog.image }}"
+             alt="{{ blog.title }}">
+    </article>
+
+    <div class="back-button">
+        <a href="/blog">Back</a>
+    </div>
+
+    <div class="edit-button">
+        <a href="/blogs/{{ blog.id }}/edit">Edit</a>
+    </div>
+
+    <form id="delete-form" method="POST" action="/blogs/{{ blog.id }}/delete"></form>
+    <div class="delete-button">
+        <button form="delete-form" type="submit">Verwijder</button>
+    </div>
+{% endblock %}

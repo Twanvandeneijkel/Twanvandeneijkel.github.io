@@ -6,6 +6,10 @@ CREATE TABLE courses (
 
 INSERT INTO courses (name, ec_passed)
 VALUES ('PCO', 1),
-        ('CSB', 1),
+       ('CSB', 1),
        ('PBA', 1),
-       ('OOP', 1);
+       ('OOP', 1),
+       ('FR1', 0),
+       ('BUB', 0),
+       ('FR2', 0),
+       ('PPD-E', 0);

@@ -11,6 +11,7 @@ abstract class AbstractRepository
     protected string $tableName;
     protected string $className;
 
+    /** @var array<string> */
     protected array $columnNames;
 
     /**
@@ -20,15 +21,14 @@ abstract class AbstractRepository
     {
         $this->database = $database;
         $this->columnNames = $this->getColumnNames($this->tableName);
-
     }
 
     /**
-     * @param $tableName
-     * @return array
+     * @param string $tableName
+     * @return array<string>
      * @throws Exception
      */
-    private function getColumnNames($tableName): array
+    private function getColumnNames(string $tableName): array
     {
         $statement = $this->database->run("SELECT name 
             FROM sqlite_master 
@@ -55,9 +55,12 @@ abstract class AbstractRepository
         return $columnNames;
     }
 
+    /**
+     * @return array<object>
+     */
     public function all(): array
     {
-        $rows = $this->database->run("SELECT * FROM {$this->tableName} ORDER BY id")->fetchAll();
+        $rows = $this->database->run("SELECT * FROM $this->tableName ORDER BY id")->fetchAll();
 
         $items = [];
 
@@ -81,7 +84,7 @@ abstract class AbstractRepository
 
     public function findById(int $id): ?object
     {
-        $row = $this->database->run("SELECT * FROM {$this->tableName} WHERE id = :id", ['id' => $id])->fetch();
+        $row = $this->database->run("SELECT * FROM $this->tableName WHERE id = :id", ['id' => $id])->fetch();
 
         if (!$row) {
             return null;
@@ -92,16 +95,19 @@ abstract class AbstractRepository
 
     public function delete(int $id): void
     {
-        $this->database->run("DELETE FROM {$this->tableName} WHERE id = :id", ['id' => $id]);
+        $this->database->run("DELETE FROM $this->tableName WHERE id = :id", ['id' => $id]);
     }
 
+    /**
+     * @template T of object
+     * @param T $entity
+     */
     public function update(object $entity): void
     {
         $setParts = [];
         $params = [];
 
         foreach ($this->columnNames as $column) {
-
             if ($column === 'id') {
                 continue;
             }
@@ -110,15 +116,19 @@ abstract class AbstractRepository
                 continue;
             }
 
-            $setParts[] = "{$column} = :{$column}";
-            $params[$column] = $entity->{$column};
+            /** @var mixed $value */
+            $value = $entity->$column;
+            $setParts[] = "$column = :$column";
+            $params[$column] = $value;
         }
 
-        $params['id'] = $entity->id;
+        /** @var mixed $id */
+        $id = $entity->id;
+        $params['id'] = $id;
 
         $sql = "UPDATE {$this->tableName}
-            SET " . implode(', ', $setParts) . "
-            WHERE id = :id";
+        SET " . implode(', ', $setParts) . "
+        WHERE id = :id";
 
         $this->database->run($sql, $params);
     }
@@ -130,7 +140,6 @@ abstract class AbstractRepository
         $params = [];
 
         foreach ($this->columnNames as $column) {
-
             // Skip auto-increment ID
             if ($column === 'id') {
                 continue;
@@ -145,7 +154,7 @@ abstract class AbstractRepository
             $params[$column] = $entity->{$column};
         }
 
-        $sql = "INSERT INTO {$this->tableName} (" . implode(', ', $columns) . ") 
+        $sql = "INSERT INTO $this->tableName (" . implode(', ', $columns) . ") 
         VALUES (" . implode(', ', $placeholders) . ")";
 
         $this->database->run($sql, $params);

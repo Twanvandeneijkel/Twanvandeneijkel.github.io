@@ -66,4 +66,18 @@ class Request
         }
         return null;
     }
+
+    /**
+     * @param string $key
+     * @return array|null
+     */
+    public function getNested(string $key): ?array
+    {
+        if (array_key_exists($key, $this->postParameters)) {
+            if (is_array($this->postParameters[$key])) {
+                return $this->postParameters[$key];
+            }
+        }
+        return null;
+    }
 }

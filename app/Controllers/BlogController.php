@@ -2,39 +2,94 @@
 
 namespace App\Controllers;
 
+use App\Models\Blog;
+use App\Repositories\BlogRepositoryInterface;
+use Framework\Request;
 use Framework\Response;
 use Framework\ResponseFactory;
 
 class BlogController
 {
     private ResponseFactory $responseFactory;
-    public function __construct(ResponseFactory $responseFactory)
+    private BlogRepositoryInterface $blogRepository;
+
+    public function __construct(ResponseFactory $responseFactory, BlogRepositoryInterface $blogRepository)
     {
         $this->responseFactory = $responseFactory;
-    }
-    public function index(): Response
-    {
-        return $this->responseFactory->view('blogs/index.html.twig');
-    }
-    public function ict(): Response
-    {
-        return $this->responseFactory->view('blogs/ict-dagelijks-leven.html.twig');
-    }
-    public function program(): Response
-    {
-        return $this->responseFactory->view('blogs/program-experience.html.twig');
-    }
-    public function study(): Response
-    {
-        return $this->responseFactory->view('blogs/studie-keuze.html.twig');
+        $this->blogRepository = $blogRepository;
     }
 
-    public function studyV2(): Response
+    public function index(): Response
     {
-        return $this->responseFactory->view('blogs/studie-keuze-part2.html.twig');
+        $blogs = $this->blogRepository->all();
+        return $this->responseFactory->view('blogs/index.html.twig', ['blogs' => $blogs]);
     }
-    public function swot(): Response
+
+    public function show(Request $request): Response
     {
-        return $this->responseFactory->view('blogs/swot.html.twig');
+        $id = (int) $request->get('id');
+        $blog = $this->blogRepository->findById($id);
+
+        if ($blog === null) {
+            return $this->responseFactory->view('404.html.twig');
+        }
+
+        return $this->responseFactory->view('blogs/show.html.twig', ['blog' => $blog]);
+    }
+
+    public function edit(Request $request): Response
+    {
+        $id = (int) $request->get('id');
+        $blog = $this->blogRepository->findById($id);
+
+        if ($blog === null) {
+            return $this->responseFactory->view('404.html.twig');
+        }
+
+        return $this->responseFactory->view('blogs/edit.html.twig', ['blog' => $blog]);
+    }
+
+    public function create(): Response
+    {
+        return $this->responseFactory->view('blogs/create.html.twig');
+    }
+
+    public function update(Request $request): Response
+    {
+        $id = (int) $request->get('id');
+        $blog = $this->blogRepository->findById($id);
+
+        if ($blog === null) {
+            return $this->responseFactory->view('404.html.twig');
+        }
+
+        $blog->title = $request->get('title') ?? $blog->title;
+        $blog->content = $request->get('content') ?? $blog->content;
+        $blog->image = $request->get('image') ?? $blog->image;
+        $blog->summary = $request->get('summary') ?? $blog->summary;
+
+        $this->blogRepository->update($blog);
+
+        return $this->responseFactory->redirect('/blogs/' . $id);
+    }
+
+    public function store(Request $request): Response
+    {
+        $blog = new Blog();
+        $blog->title = $request->get('title') ?? '';
+        $blog->content = $request->get('content') ?? '';
+        $blog->image = $request->get('image') ?? '';
+        $blog->summary = $request->get('summary') ?? '';
+
+        $blog = $this->blogRepository->insert($blog);
+
+        return $this->responseFactory->redirect('/blogs/' . $blog->id);
+    }
+
+    public function delete(Request $request): Response
+    {
+        $id = (int) $request->get('id');
+        $this->blogRepository->delete($id);
+        return $this->responseFactory->redirect('/blog');
     }
 }

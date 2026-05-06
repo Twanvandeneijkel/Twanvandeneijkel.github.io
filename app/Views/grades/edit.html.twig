@@ -1,0 +1,104 @@
+{% extends "/partials/base.html.twig" %}
+
+{% block title %}Cijfers aanpassen{% endblock %}
+
+{% block styles %}
+    <link rel="stylesheet" href="/css/dashboard.css">
+{% endblock %}
+
+{% block content %}
+    <section class="dashboard">
+        <h1>Cijfers aanpassen</h1>
+        <form method="POST" action="/dashboard/update">
+            <table>
+                <tr>
+                    <th>Blok</th>
+                    <th>Cursus</th>
+                    <th>EC</th>
+                    <th>Examen</th>
+                    <th>Cijfer</th>
+                </tr>
+                <tr>
+                    <td rowspan="3">1</td>
+                    <td>PCO (CU75001)</td>
+                    <td class="onbekend">2,5</td>
+                    <td>Presentatie</td>
+                    <td><input class="grade-input" type="number" name="grades[0]" min="1" max="10" step="0.1" value="{{ exams[0].grade ?? '' }}"></td>
+                </tr>
+                <tr>
+                    <td>CSB (CU75002)</td>
+                    <td class="onbekend">5</td>
+                    <td>Schrijftoets</td>
+                    <td><input class="grade-input" type="number" name="grades[1]" min="1" max="10" step="0.1" value="{{ exams[1].grade ?? '' }}"></td>
+                </tr>
+                <tr>
+                    <td>PBA (CU75003)</td>
+                    <td class="onbekend">5</td>
+                    <td>Programmeertoets</td>
+                    <td><input class="grade-input" type="number" name="grades[2]" min="1" max="10" step="0.1" value="{{ exams[2].grade ?? '' }}"></td>
+                </tr>
+                <tr>
+                    <td rowspan="2">2</td>
+                    <td rowspan="2">OOP</td>
+                    <td class="onbekend" rowspan="2">10</td>
+                    <td>Presentatie</td>
+                    <td><input class="grade-input" type="number" name="grades[3]" min="1" max="10" step="0.1" value="{{ exams[3].grade ?? '' }}"></td>
+                </tr>
+                <tr>
+                    <td>Schrijftoets</td>
+                    <td><input class="grade-input" type="number" name="grades[4]" min="1" max="10" step="0.1" value="{{ exams[4].grade ?? '' }}"></td>
+                </tr>
+                <tr>
+                    <td rowspan="4">3</td>
+                    <td rowspan="3">Framework Project 1 (CU75080)</td>
+                    <td class="onbekend" rowspan="3">10</td>
+                    <td>Schrijftoets</td>
+                    <td><input class="grade-input" type="number" name="grades[5]" min="1" max="10" step="0.1" value="{{ exams[5].grade ?? '' }}"></td>
+                </tr>
+                <tr>
+                    <td>Presentatie (groep)</td>
+                    <td><input class="grade-input" type="number" name="grades[6]" min="1" max="10" step="0.1" value="{{ exams[6].grade ?? '' }}"></td>
+                </tr>
+                <tr>
+                    <td>Portofolio</td>
+                    <td><input class="grade-input" type="number" name="grades[7]" min="1" max="10" step="0.1" value="{{ exams[7].grade ?? '' }}"></td>
+                </tr>
+                <tr>
+                    <td rowspan="2">Business Understanding Basics (CU75081)</td>
+                    <td class="onbekend" rowspan="2">2.5</td>
+                    <td rowspan="2">Opdracht</td>
+                    <td><input class="grade-input" type="number" name="grades[8]" min="1" max="10" step="0.1" value="{{ exams[8].grade ?? '' }}"></td>
+                </tr>
+                <tr>
+                    <td rowspan="4">4</td>
+                    <td><input class="grade-input" type="number" name="grades[9]" min="1" max="10" step="0.1" value="{{ exams[9].grade ?? '' }}"></td>
+                </tr>
+                <tr>
+                    <td rowspan="3">Framework Project 2 (CU75011)</td>
+                    <td class="onbekend" rowspan="3">10</td>
+                    <td>Presentatie</td>
+                    <td><input class="grade-input" type="number" name="grades[10]" min="1" max="10" step="0.1" value="{{ exams[10].grade ?? '' }}"></td>
+                </tr>
+                <tr>
+                    <td>Portfolio</td>
+                    <td><input class="grade-input" type="number" name="grades[11]" min="1" max="10" step="0.1" value="{{ exams[11].grade ?? '' }}"></td>
+                </tr>
+                <tr>
+                    <td>Portfolio</td>
+                    <td><input class="grade-input" type="number" name="grades[12]" min="1" max="10" step="0.1" value="{{ exams[12].grade ?? '' }}"></td>
+                </tr>
+                <tr>
+                    <td>1-4</td>
+                    <td>PPD-E (CU75068)</td>
+                    <td class="onbekend">12.5</td>
+                    <td>Interview</td>
+                    <td><input class="grade-input" type="number" name="grades[13]" min="1" max="10" step="0.1" value="{{ exams[13].grade ?? '' }}"></td>
+                </tr>
+            </table>
+
+            <progress value="60" max="60"></progress>
+
+            <button class="save-grades-button" type="submit">Sla cijfers op</button>
+        </form>
+    </section>
+{% endblock %}

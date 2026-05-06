@@ -3,8 +3,9 @@
 namespace App;
 
 use App\Controllers\BlogController;
-use App\Controllers\GradeController;
+use App\Controllers\ExamController;
 use App\Controllers\HomeController;
+use App\Controllers\UserController;
 use Exception;
 use Framework\RouteProviderInterface;
 use Framework\Router;
@@ -27,13 +28,23 @@ class RouteProvider implements RouteProviderInterface
 
         $blogController = $container->get(BlogController::class);
         $router->addRoute('GET', '/blog', [$blogController, 'index']);
-        $router->addRoute('GET', '/blogs/ict-dagelijks-leven', [$blogController, 'ict']);
-        $router->addRoute('GET', '/blogs/program-experience', [$blogController, 'program']);
-        $router->addRoute('GET', '/blogs/studie-keuze', [$blogController, 'study']);
-        $router->addRoute('GET', '/blogs/studie-keuze-part2', [$blogController, 'studyV2']);
-        $router->addRoute('GET', '/blogs/swot', [$blogController, 'swot']);
+        $router->addRoute('GET', '/blog/create', [$blogController, 'create']);
+        $router->addRoute('POST', '/blog/create', [$blogController, 'store']);
+        $router->addRoute('GET', '/blogs/(?<id>[1-9]\d*)', [$blogController, 'show']);
+        $router->addRoute('GET', '/blogs/(?<id>[1-9]\d*)/edit', [$blogController, 'edit']);
+        $router->addRoute('POST', '/blogs/(?<id>[1-9]\d*)/update', [$blogController, 'update']);
+        $router->addRoute('POST', '/blogs/(?<id>[1-9]\d*)/delete', [$blogController, 'delete']);
 
-        $gradeController = $container->get(GradeController::class);
-        $router->addRoute('GET', '/dashboard', [$gradeController, 'index']);
+        $examController = $container->get(ExamController::class);
+        $router->addRoute('GET', '/dashboard', [$examController, 'index']);
+        $router->addRoute('GET', '/dashboard/edit', [$examController, 'edit']);
+
+        $router->addRoute('POST', '/dashboard/update', [$examController, 'update']);
+
+        $userController = $container->get(UserController::class);
+        $router->addRoute('GET', '/register', [$userController, 'registerForm']);
+        $router->addRoute('GET', '/login', [$userController, 'loginForm']);
+        $router->addRoute('POST', '/register', [$userController, 'register']);
+        $router->addRoute('POST', '/login', [$userController, 'login']);
     }
 }

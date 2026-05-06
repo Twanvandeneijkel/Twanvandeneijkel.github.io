@@ -1,0 +1,225 @@
+.blog-content {
+    width: 1350px;
+    height: 530px;
+    background-color: var(--boxcolor);
+    border-radius: 9px;
+    position: absolute;
+    left: 120px;
+    top: 90px;
+    overflow: hidden;
+    padding-right: 35%;
+    box-sizing: border-box;
+}
+
+.blog-content p {
+    margin-top: 0;
+    font-size: 13px;
+}
+
+.blog-content a {
+    color: white;
+}
+
+.blog-content a:hover {
+    color: red;
+}
+
+.blog-content a:visited {
+    color: rgb(137, 124, 255);
+}
+
+.blog-content-pic {
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 33%;
+    border-radius: 9px;
+    position: absolute;
+}
+
+.back-button {
+    height: 60px;
+    width: 200px;
+    background-color: var(--boxcolor);
+    border-radius: 9px;
+    position: absolute;
+    bottom: 10px;
+    right: 690px;
+    text-align: center;
+}
+
+
+.back-button a {
+    display: inline-block;
+    margin-top: 10px;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+}
+
+body:has(.back-button a:hover) .back-button {
+    background-color: red;
+}
+
+.edit-button {
+    height: 60px;
+    width: 200px;
+    background-color: var(--boxcolor);
+    border-radius: 9px;
+    position: absolute;
+    bottom: 10px;
+    right: 475px;
+    text-align: center;
+}
+
+.edit-button a {
+    display: inline-block;
+    margin-top: 10px;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+}
+
+body:has(.edit-button a:hover) .edit-button {
+    background-color: red;
+}
+
+footer {
+    bottom: 10px;
+    left: 120px;
+}
+
+.blog-edit-title {
+    display: block;
+    width: 90%;
+    background-color: rgb(0, 0, 200);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-family: monospace;
+    font-size: 30px;
+    padding: 4px;
+    margin-bottom: 10px;
+}
+
+.blog-edit-content {
+    display: block;
+    width: 90%;
+    height: 250px;
+    background-color: rgb(0, 0, 200);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-family: monospace;
+    font-size: 13px;
+    padding: 4px;
+    margin-bottom: 10px;
+    resize: none;
+}
+
+.blog-edit-image {
+    display: block;
+    width: 90%;
+    background-color: rgb(0, 0, 200);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-family: monospace;
+    font-size: 13px;
+    padding: 4px;
+    margin-bottom: 10px;
+}
+
+.blog-edit-summary {
+    display: block;
+    width: 90%;
+    background-color: rgb(0, 0, 200);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-family: monospace;
+    font-size: 13px;
+    padding: 4px;
+    margin-bottom: 10px;
+}
+
+.save-blog-button {
+    height: 40px;
+    width: 150px;
+    background-color: var(--boxcolor);
+    border: none;
+    border-radius: 9px;
+    color: white;
+    font-family: monospace;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.save-blog-button:hover {
+    background-color: red;
+}
+
+.save-button {
+    height: 60px;
+    width: 200px;
+    background-color: var(--boxcolor);
+    border-radius: 9px;
+    position: absolute;
+    bottom: 10px;
+    right: 280px;
+    text-align: center;
+}
+
+.save-button button {
+    display: inline-block;
+    margin-top: 0;
+    padding-top: 0;
+    height: 100%;
+    width: 100%;
+    background: none;
+    border: none;
+    text-decoration: none;
+    color: white;
+    font-family: monospace;
+    font-size: 30px;
+    cursor: pointer;
+    line-height: 60px;
+}
+
+body:has(.save-button button:hover) .save-button {
+    background-color: red;
+}
+
+.delete-button {
+    height: 60px;
+    width: 200px;
+    background-color: var(--boxcolor);
+    border-radius: 9px;
+    position: absolute;
+    bottom: 10px;
+    right: 260px;
+    text-align: center;
+}
+
+.delete-button button {
+    display: inline-block;
+    margin-top: 0;
+    padding-top: 0;
+    height: 100%;
+    width: 100%;
+    background: none;
+    border: none;
+    color: white;
+    font-family: monospace;
+    font-size: 30px;
+    cursor: pointer;
+    line-height: 60px;
+}
+
+body:has(.delete-button button:hover) .delete-button {
+    background-color: red;
+}

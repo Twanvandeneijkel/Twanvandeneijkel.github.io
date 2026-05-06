@@ -1,0 +1,29 @@
+{% extends "/partials/base.html.twig" %}
+
+{% block title %}{{ blog.title }} - Edit{% endblock %}
+
+{% block styles %}
+    <link rel="stylesheet" href="/css/blog-show.css">
+{% endblock %}
+
+{% block content %}
+    <article class="blog-content">
+        <form id="blog-edit-form" method="POST" action="/blogs/{{ blog.id }}/update">
+            <input class="blog-edit-title" type="text" name="title" value="{{ blog.title }}">
+            <textarea class="blog-edit-content" name="content">{{ blog.content }}</textarea>
+            <input class="blog-edit-image" type="text" name="image" value="{{ blog.image }}">
+            <input class="blog-edit-summary" type="text" name="summary" value="{{ blog.summary }}">
+            <img class="blog-content-pic"
+                 src="{{ blog.image }}"
+                 alt="{{ blog.title }}">
+        </form>
+    </article>
+
+    <div class="back-button">
+        <a href="/blogs/{{ blog.id }}">Back</a>
+    </div>
+
+    <div class="save-button">
+        <button form="blog-edit-form" type="submit">Opslaan</button>
+    </div>
+{% endblock %}
